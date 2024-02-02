@@ -11,7 +11,7 @@ router.post("/add-blog", authMiddleware, async (req, res) => {
     const newBlog = new Blog(req.body);
     await newBlog.save();
     res.send({
-      message: "Blog added successfully",
+      message: "Blog added successfully bexause of me",
       data: newBlog,
       success: true,
     });
